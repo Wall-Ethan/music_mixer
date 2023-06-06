@@ -1,16 +1,32 @@
+@charset "UTF-8";
 
+/* CSS Document */
 
 .box-color {
-	color: #fff;
-	background: #aaaaaa;
+	color: #fd6868;
+	background: #a19e9e;
 	text-align: center;
 	margin: 0;
 }
+
+/*basic reset*/
 
 div,p,body,header,footer,section,article,nav { 
 	margin: 0; 
 	padding: 0; 
 }
+
+main {
+	background-color:  #1d31e6;
+}
+
+img { 
+	border: none;
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
 
 body {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -41,7 +57,7 @@ a {
 }
 
 #header-con {
-	background-color: #ddd;
+	background-color: #53f8f0;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -55,5 +71,53 @@ nav {
 
 nav a {
 	margin-right: 40px;
+}
+
+/* Specific to index page desktop  */
+
+#hero {
+	margin-top: 100px; 
+}
+
+#hero-text {
+	grid-column: 1/8;
+	text-align: left;
+	font-size: 20px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 35px;
+}
+
+
+#products {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#products h2 {
+	grid-column: 1/-1;
+	text-align: center;
+	background-color: #aaaaaa;
+	font-size: 2em;
+}
+
+/* For Audio Boxes */
+
+#product1 {
+	grid-column: 1/5;
+}
+
+#product2 {
+	grid-column: 5/9;
+}
+
+#product3 {
+	grid-column: 9/-1;
+}
+
+.audio-box {
+	background-color: #c5f2f5;
 }
 
