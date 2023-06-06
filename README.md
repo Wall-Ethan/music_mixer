@@ -5,4 +5,4 @@
 
 # Color Scheme of Site 
 
-## The overall color scheme I decided to go with for this site was various shades of blue with grey/silver text boxes and red text.
+## The overall color scheme I decided to go with for this site was various shades of blue with grey/silver text boxes and red text for the main article and black for the audio file text.
