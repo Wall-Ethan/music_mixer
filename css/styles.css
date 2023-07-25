@@ -54,7 +54,8 @@ body {
   
   /* Additional styles for improved readability */
   h1 {
-	color: #007bff;
+	color: #20d1f0;
+	text-align: center;
   }
   
   /* Optional: Style for the main container to center it on the page */
