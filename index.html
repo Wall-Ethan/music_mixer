@@ -1,51 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Music Mixer Project</title>
-<link href="css/main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Mixer</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <h1>The simple music mixer</h1>
 </head>
-<!--Begining of website-->
 <body>
-    <main id="container">
-        <header id="header-con">
-            <div id="main-header" class="grid-con">
-                <!--Main Logo-->
-                <img src="img/place.png" alt="logo" id="logo">
-                <nav>
-                    <!--Navigation For other pages-->
-                    <a href="index.html">Home</a>
-                    <a href="index.html">Upload</a>
-                    <a href="index.html">About</a>
-                </nav>
-            </div>
-        </header> 
-        <!--Description of the site and services-->
-        <article class="grid-con" id="hero">
-            <a id="hero-text" class="box-color">
-                <p>Our Services</p><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nesciunt ad quos sed id facere ab, rerum fuga laudantium soluta quasi cum magni necessitatibus rem sequi consequatur suscipit quae porro!</p>
-            </a>
-            <img src="img/holder.png" alt="image" id="main-image">
-        </article>
-        <!--Place for putting in music files when done-->
-        <figure class="grid-con" id="products">
-            <h2>Audio File Drop Locations</h2>
-            <div class="audio-box" id="product1">
-                <img src="img/holder.png" alt="image">
-                <h3>Place Audio File</h3>
-            </div>
-            <div class="audio-box" id="product2">
-                <img src="img/holder.png" alt="image">
-                <h3>Place Audio File</h3>
-            </div>
-            <div class="audio-box" id="product3">
-                <img src="img/holder.png" alt="image">
-                <h3>Place Audio File</h3>
-            </div>
-        </figure>
+    <div class="container">
+        <div class="mixer">
+            <div class="drop-area" id="dropArea1">Drag and drop audio here</div>
+            <div class="drop-area" id="dropArea2">Drag and drop audio here</div>
+            <!-- animation trigger elements here -->
+            <button id="animationTrigger1">Trigger Animation 1</button>
+            <button id="animationTrigger2">Trigger Animation 2</button>
+            <!-- button for rest-->
+            <button id="resetButton">Reset</button>
+            <!-- buttons for audio track compilation -->
+            <button id="compileAudio">Compile Audio</button>
+            <audio id="compiledAudio" controls></audio>
+            <!-- Audio elements for each track -->
+            <audio id="track1" src="audio/audio1.mp3" preload="auto" controls draggable="true"></audio>
+            <audio id="track2" src="audio/audio2.mp3" preload="auto" controls draggable="true"></audio>
+        </div>
+    </div> 
 
-    </main>
+  <script src="js/script.js"></script>
 </body>
-<!--More to be added later-->
 </html>
